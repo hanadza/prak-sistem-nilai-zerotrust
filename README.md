@@ -100,6 +100,6 @@ Uji selesai jika ringkasan menunjukkan `0 gagal`. Jam akses dibaca dari konfigur
 | 4.4 Audit log | gateway/audit.js, tabel audit_log |
 | Finalisasi memanggil Transkrip lewat gateway | services/nilai/index.js (finalisasi) |
 
-## Pengamanan tambahan di luar soal
+## Pengamanan tambahan
 
 Default deny untuk endpoint tanpa kebijakan, rotasi refresh token (token lama yang dipakai ulang ditolak), refresh token disimpan sebagai hash SHA-256, pembatas percobaan login (5 kali per menit per username), hash password bcrypt, pesan galat login tidak membedakan user tidak ada dan password salah, serta pembatalan finalisasi bila sinkron transkrip gagal.
